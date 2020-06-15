@@ -22,17 +22,29 @@
                     Orders
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{(request()->url() == route('admin.product.index') ? 'active' : '')}}" href="{{ route('admin.product.index') }}">
+            <li class="nav-item dropdown">
+                <a class="nav-link {{(request()->url() == route('admin.product.index') ? 'active' : '')}} dropdown-btn" href="javascript:void(0)" id="productDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span data-feather="shopping-cart"></span>
                     Products
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
                 </a>
+                <div class="dropdown-menu" aria-labelledby="productDropdown">
+                    <a class="dropdown-item" href="{{route('admin.product.create')}}">Add Category</a>
+                    <a class="dropdown-item" href="{{route('admin.product.index')}}">All Categories</a>
+                    <a class="dropdown-item" href="{{route('admin.product.trash')}}">Trashed Categories</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{(request()->url() == route('admin.category.index') ? 'active' : '')}}" href="{{route('admin.category.index')}}">
+            <li class="nav-item dropdown">
+                <a class="nav-link {{(request()->url() == route('admin.category.index') ? 'active' : '')}} dropdown-btn" href="javascript:void(0)" id="categoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span data-feather="bar-chart-2"></span>
                     Categories
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
                 </a>
+                <div class="dropdown-menu" aria-labelledby="categoryDropdown">
+                    <a class="dropdown-item" href="{{route('admin.category.create')}}">Add Category</a>
+                    <a class="dropdown-item" href="{{route('admin.category.index')}}">All Categories</a>
+                    <a class="dropdown-item" href="{{route('admin.category.trash')}}">Trashed Categories</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -83,4 +95,4 @@
         </ul>
     </div>
 </nav>
-//TODO lecture no 6 start
+

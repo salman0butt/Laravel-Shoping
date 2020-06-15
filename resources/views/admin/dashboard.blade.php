@@ -1,4 +1,8 @@
 @extends('admin.app')
+@section('breadcrums')
+    <li class="breadcrumb-item">Dashboard</li>
+
+@stop
 
 @section('content')
 @section('title')

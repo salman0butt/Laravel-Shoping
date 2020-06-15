@@ -15,8 +15,14 @@ class CategoryController extends Controller
     public function index()
     {
         //
-        $categories = Category::all();
+        $categories = Category::paginate(5);
         return view('admin.categories.index', compact('categories'));
+    }
+    public function trash()
+    {
+        $categories = Category::onlyTrashed()->paginate(5);
+        return view('admin.categories.index', compact('categories'));
+
     }
 
     /**
@@ -27,8 +33,8 @@ class CategoryController extends Controller
     public function create()
     {
         //
-        $catgories = Category::all();
-        return view('admin.categories.create',compact('catgories'));
+        $categories = Category::all();
+        return view('admin.categories.create',compact('categories'));
     }
 
     /**
@@ -71,6 +77,10 @@ class CategoryController extends Controller
     public function edit(Category $category)
     {
         //
+
+        $categories = Category::where('id','!=',$category->id)->get();
+        return view('admin.categories.create',['category'=>$category,'categories'=>$categories]);
+
     }
 
     /**
@@ -83,6 +93,16 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         //
+        $request->validate([
+            'title' => 'required|min:5',
+            'slug' => 'required|min:5'
+        ]);
+        $category->update($request->only('title','description','slug'));
+        if (isset($request->parent_id)) {
+            $category->childrens()->detach();
+            $category->childrens()->attach($request->parent_id);
+        }
+        return back()->with('success','Category SuccessFully Updated');
     }
 
     /**
@@ -91,8 +111,31 @@ class CategoryController extends Controller
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
+    public function destroy($id)
+    {
+        $category = Category::withTrashed()->where('id',$id);
+        $category->childrens()->detach();
+        if ($category->forceDelete()){
+            return back()->with('success','Category SuccessFully Deleted');
+        }else {
+            return back()->with('danger','Error Deleting Records');
+        }
+    }
+    public function remove(Category $category)
     {
         //
+        if ($category->delete()){
+            return back()->with('success','Category SuccessFully Trashed');
+        }else {
+            return back()->with('danger','Error Deleting Records');
+        }
+    }
+    public function recoverCat($id) {
+        $category = Category::onlyTrashed()->findOrFail($id);
+        if ($category->restore()){
+            return back()->with('success','Category SuccessFully Restored');
+        }else {
+            return back()->with('danger','Error in restoring Records');
+        }
     }
 }

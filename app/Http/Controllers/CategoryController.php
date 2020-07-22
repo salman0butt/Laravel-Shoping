@@ -114,7 +114,7 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         $category = Category::withTrashed()->where('id',$id);
-        $category->childrens()->detach();
+       // $category->childrens()->detach();
         if ($category->forceDelete()){
             return back()->with('success','Category SuccessFully Deleted');
         }else {

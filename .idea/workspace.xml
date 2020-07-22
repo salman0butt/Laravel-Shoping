@@ -20,27 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c08a1fe7-9778-44ec-81ab-67f8a564a0ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shoping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shoping.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/39088608-1f6a-4a2d-82bb-d4b1289730be.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/39088608-1f6a-4a2d-82bb-d4b1289730be.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +205,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -424,6 +410,16 @@
       <workItem from="1589626325694" duration="1313000" />
       <workItem from="1589627728203" duration="450000" />
       <workItem from="1589712083554" duration="1003000" />
+      <workItem from="1593192353149" duration="3262000" />
+      <workItem from="1593250582454" duration="7832000" />
+      <workItem from="1593346423054" duration="2740000" />
+      <workItem from="1593791263089" duration="254000" />
+      <workItem from="1593791564843" duration="62000" />
+      <workItem from="1593878673979" duration="626000" />
+      <workItem from="1594452280101" duration="58000" />
+      <workItem from="1594452526128" duration="129000" />
+      <workItem from="1594452683337" duration="644000" />
+      <workItem from="1594453454742" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="Working on category section">
       <created>1587318679535</created>
@@ -481,6 +477,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Deployment/0.0.1600.860@0.0.1600.860" timestamp="1589560459119" />
+    <state x="426" y="108" key="#Inspections" timestamp="1593348579053">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="426" y="108" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1593348579053" />
     <state x="685" y="293" width="599" height="434" key="#Notifications" timestamp="1587893813423">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -501,10 +501,6 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1589299585773" />
-    <state x="628" y="273" key="#com.intellij.ide.actions.DebugLogConfigureAction" timestamp="1582360262513">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="628" y="273" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.0.1600.860@0.0.1600.860" timestamp="1582360262513" />
     <state x="530" y="208" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1587895084775">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -521,10 +517,6 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="568" y="197" key="#com.intellij.tools.ToolEditorDialog/0.0.1600.860@0.0.1600.860" timestamp="1587572504862" />
-    <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581159344949">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1581159344949" />
     <state x="653" y="255" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1587572131618">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -633,10 +625,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="643" y="132" key="RollbackChangesDialog/0.0.1600.860@0.0.1600.860" timestamp="1588436516104" />
-    <state x="295" y="76" width="1161" height="733" key="SettingsEditor" timestamp="1589626706713">
+    <state x="295" y="76" width="1161" height="733" key="SettingsEditor" timestamp="1594452802038">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="295" y="76" width="1161" height="733" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1589626706713" />
+    <state x="295" y="76" width="1161" height="733" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1594452802038" />
     <state width="200" height="441" key="SqlResolveConfigurable" timestamp="1587307909820">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -653,6 +645,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="699" y="290" width="485" height="382" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1600.860@0.0.1600.860" timestamp="1588781999460" />
+    <state x="608" y="274" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1593253144545">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="608" y="274" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1600.860@0.0.1600.860" timestamp="1593253144545" />
     <state x="614" y="76" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1588781968684">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -680,15 +676,11 @@
     <state width="600" height="428" key="javadoc.popup" timestamp="1589216573489">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="731" height="500" key="javadoc.popup.new" timestamp="1589626901412">
+    <state width="731" height="500" key="javadoc.popup.new" timestamp="1594452816292">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="731" height="500" key="javadoc.popup.new/0.0.1600.860@0.0.1600.860" timestamp="1589626901412" />
+    <state width="731" height="500" key="javadoc.popup.new/0.0.1600.860@0.0.1600.860" timestamp="1594452816292" />
     <state width="600" height="428" key="javadoc.popup/0.0.1600.860@0.0.1600.860" timestamp="1589216573489" />
-    <state x="456" y="195" key="run.anything.popup" timestamp="1582360306741">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1582360306741" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1589300984798">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

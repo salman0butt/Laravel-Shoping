@@ -17,7 +17,7 @@ class Category extends Model
     public function products() {
         return $this->belongsToMany('\App\Product');
     }
-    //TODO lecture no 8 start
+    //TODO lecture no 9 start
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */

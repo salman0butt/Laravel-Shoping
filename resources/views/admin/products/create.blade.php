@@ -186,7 +186,7 @@
                     $("#imgthumbnail").attr('src', image);
                 });
             });
-            $('#btn-add').on('click', function(e){
+            $(document).on('click', '#btn-add', function(e){
 
                 var count = $('.options').length+1;
                 $.get("{{route('admin.product.extras')}}").done(function(data){
